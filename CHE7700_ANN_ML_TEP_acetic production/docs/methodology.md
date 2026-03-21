@@ -1,0 +1,1 @@
+Time-aware split, binary supervised target, multiclass unsupervised evaluation, DPCA lag stacking, MPCA approximation, LSTM sequence modeling, and subset-based manifold visualization.

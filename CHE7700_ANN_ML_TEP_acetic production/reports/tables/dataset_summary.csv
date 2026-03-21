@@ -1,0 +1,8 @@
+metric,value
+n_files,16
+common_sensor_count,50
+total_rows,7286
+train_rows,5816
+test_rows,1470
+normal_rows,481
+faulty_rows,6805

@@ -1,0 +1,90 @@
+Fiyinfoluwa Abisoye-project/
+
+
+├─ LICENSE
+├─ README.md
+├─ Makefile
+├─ requirements.txt
+├─ environment.yml                  # optional (conda)
+├─ .gitignore
+
+├─ data/
+│  ├─ raw/                          # original immutable dataset dumps
+│  ├─ external/                     # third-party data (if any)
+│  ├─ interim/                      # intermediate transformed data
+│  └─ processed/                    # final canonical datasets for modeling
+
+├─ docs/
+│  ├─ project_plan.pdf              # 2-page project plan (Part 1)
+│  ├─ data_dictionary.md
+│  ├─ methodology.md
+│  └─ references.bib
+
+├─ notebooks/
+│  ├─ 01_eda.ipynb
+│  ├─ 02_preprocessing.ipynb
+│  ├─ 03_unsupervised_dr_clustering.ipynb
+│  ├─ 04_supervised_models.ipynb
+│  └─ 05_reinforcement_learning.ipynb
+
+├─ reports/
+│  ├─ figures/                      # plots for the final report
+│  ├─ tables/
+│  ├─ preliminary_report.pdf
+│  └─ final_report.pdf
+
+├─ models/
+│  ├─ supervised/                   # saved supervised models
+│  ├─ unsupervised/                 # saved clustering/DR artifacts
+│  └─ rl/                           # policies, checkpoints, replay buffers
+
+├─ src/
+│  ├─ __init__.py
+│  ├─ config/
+│  │  ├─ base.yaml
+│  │  ├─ supervised.yaml
+│  │  ├─ unsupervised.yaml
+│  │  └─ rl.yaml
+│  │
+│  ├─ data/
+│  │  ├─ make_dataset.py            # load + split + save processed data
+│  │  └─ validate_schema.py
+│  │
+│  ├─ features/
+│  │  ├─ build_features.py          # scaling, encoding, feature creation
+│  │  └─ transformers.py            # sklearn pipelines/ColumnTransformer
+│  │
+│  ├─ unsupervised/
+│  │  ├─ dimensionality_reduction.py
+│  │  ├─ clustering.py
+│  │  └─ evaluate_unsupervised.py   # silhouette, DBI, CH score, etc.
+│  │
+│  ├─ supervised/
+│  │  ├─ train_supervised.py        # train (e.g., SVM/ANN/RF/GB)
+│  │  ├─ tune_supervised.py         # GridSearch/RandomSearch
+│  │  ├─ evaluate_supervised.py     # accuracy/F1/AUC or MAE/RMSE/R2
+│  │  └─ predict.py
+│  │
+│  ├─ rl/
+│  │  ├─ envs/                      # custom environments (Gymnasium-style)
+│  │  │  └─ process_control_env.py
+│  │  ├─ agents/
+│  │  │  ├─ dqn.py
+│  │  │  ├─ ppo.py
+│  │  │  └─ q_learning.py
+│  │  ├─ train_rl.py
+│  │  ├─ evaluate_rl.py
+│  │  └─ utils.py
+│  │
+│  ├─ visualization/
+│  │  ├─ visualize.py               # generic plotting helpers
+│  │  └─ plot_training_curves.py
+│  │
+│  └─ utils/
+│     ├─ seed.py
+│     └─ logging.py
+│
+└─ tests/
+   ├─ test_data.py
+   ├─ test_features.py
+   └─ test_models.py
