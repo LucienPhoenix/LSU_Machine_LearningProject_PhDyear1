@@ -1,6 +1,6 @@
 # README
 
-## CHE 7700 Project: Tennessee Eastman Process Fault Analysis for Chemical Process Automation - PhD Research
+## CHE 7700 Project: Tennessee Eastman Process Fault Analysis for Chemical Process Automation - PhD Research Chevron Group
 
 This project investigates process monitoring, fault detection, pattern discovery, and classification using data from the Tennessee Eastman Process (TEP), interpreted in the industrial context of the automated production of **acetic acid via oxidation of acetaldehyde**. The Tennessee Eastman Process is widely used as a benchmark in process systems engineering because it captures the complexity of real industrial operations, including multiple sensors, interacting units, nonlinear behavior, recycle effects, and dynamic fault propagation. In this study, the dataset is used as a process-automation proxy for understanding how modern machine learning can support industrial chemical manufacturing through better monitoring, diagnosis, and decision support.
 
